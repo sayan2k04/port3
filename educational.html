@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300vh;
+}
+
+.education-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.education-card {
+    background-color: #080707;
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.education-card h2 {
+    color: #fdfdfd;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.education-details {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.education-details h3 {
+    color: #1484fc;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.education-details p {
+    font-size: 16px;
+    color: #fcfcfc;
+}
+
+.education-details p.date {
+    color: #fefefe;
+    margin-bottom: 15px;
+}
+
+.education-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.education-details h4 {
+    color: #fdfcfc;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.skf{
+    justify-content: center;
+}
+</style>
+<body>
+    <div class="education-container">
+        <div class="education-card">
+            <h2>Education</h2>
+            
+            <!-- Bachelor's Degree -->
+            <div class="education-details">
+                <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+                <div class="skf">
+                    <img src="portimgskf.jpeg" class="skf"  width="515px" height="250px">
+                </div>
+                <p><strong>Supreme Knowledge Foundation Group of Institution</strong></p><p>West Bengal, India</p>
+                <p class="date">October 2024 – Present</p>
+                <p><strong>CGPA:</strong> 7.19/10</p>
+                <h4>Relevant Coursework</h4>
+                <ul>
+                    <li>Data Structures</li>
+                    <li>Design and Analysis of Algorithms</li>
+                    <li>Operating Systems</li>
+                    <li>Compiler Design</li>
+                </ul>
+            </div>
+            
+            
+            <!-- Higher Secondary -->
+            <div class="education-details">
+                <div class="sch">
+                    <img src="portimgschool.jpeg" width="515px" height="250px">
+                </div>
+                <h3>Higher Secondary (Science)</h3>
+                <p><strong>Anandanagar High School</strong>, Bally, West Bengal</p>
+                <p class="date">2022</p>
+                <p><strong>Percentage:</strong> 76%</p>
+            </div>
+            
+            <!-- Secondary -->
+            <div class="education-details">
+                <h3>Secondary</h3>
+                <p><strong>Anandanagar High School</strong>, Bally, West Bengal</p>
+                <p class="date">2020</p>
+                <p><strong>Percentage:</strong> 60%</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

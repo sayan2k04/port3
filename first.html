@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:black;
+            color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(10, 17, 118);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+
+        }
+        nav ul li{
+            list-style: none;
+            margin:0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(235, 57, 57);
+            font-size: 1.04rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .first{
+            display: flex;
+            justify-content: space-around;
+            margin:60px 0 ;
+        }
+        .first > div{
+            width: 40%;
+        }
+        .leftsection{
+            /* background-color: rgb(74, 66, 217); */
+            font-size: 2rem;
+            margin:30px;
+        }
+        .rightsection img{
+            margin:5px 0;
+        }
+        .pur{
+            color: rgb(75, 128, 227);
+        }
+        #element{
+            color: aquamarine;
+        }
+        .second{
+            color: aqua;
+        }
+        main hr{
+            border: 0;
+            background: white;
+            height: 1.2px;
+            margin:40px 84px;
+        }
+        .btn{
+            padding: 12px;
+            border: 2px solid white;
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .btn a{
+            text-decoration: none;
+            color: white;
+        }
+        .btn:hover{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Sayan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="educational.html">Education</a></li>
+                    <li><a href="certificate.html">Certificates</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftsection">
+                Hi, My name is <span class="pur">Sayan</span>
+                <div>
+                    and I am a Student of Btech(CSE)
+                </div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn" ><a href="Mycv.pdf" download>Download CV</a></button>
+                    <button class="btn"><a href="https://github.com/sayan2k04">Visit Github</a></button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="portimg5.jpg" alt="" height="300px" width="300px">
+            </div>
+        </section><hr>
+        <section class="second">
+            
+            
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['<i>Frontend Web Developer</i>','<i>Coding Enthusiast</i>'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>

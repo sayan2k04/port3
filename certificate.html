@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+        justify-content:center;
+        display: flex;
+    }
+    .certificate-item{
+        border: 2px solid red;
+        border-radius: 10px;
+        margin-top: 20px;
+        text-align: center;
+        width: 250px;
+        height: 200px;
+
+    }
+    .certificate-item:hover{
+       font-size: 20px;
+    }
+    .certificate-item a{
+        text-decoration: none;
+        color: white;
+        border: 1.5px solid white;
+        margin: 20px;
+        border-radius: 10px;
+    }
+    .new{
+        position: sticky;
+    }
+    .sticky-image {
+        position: -webkit-sticky; /* For Safari */
+        position: sticky;
+        top: 10px;
+    }
+    h2{
+        font-size: 50px;
+        color: rgb(44, 153, 242);
+    }
+</style>
+<body>
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="certificate-item">
+          <h3>HTML Certification</h3>
+          <p>Issued by: Dataflair</p>
+          <p>Date: January 2024</p>
+          <a href="portimghtml.pdf" target="_blank">View Certificate</a>
+        </div>
+        <div class="certificate-item">
+            <h3>CSS Certification</h3>
+            <p>Issued by: Dataflair</p>
+            <p>Date: February 2024</p>
+            <a href="portcss.pdf" target="_blank">View Certificate</a>
+          </div>
+        <div class="certificate-item">
+          <h3>JavaScript Certification</h3>
+          <p>Issued by: Dataflair</p>
+          <p>Date: October 2024</p>
+          <a href="portjs.pdf" target="_blank">View Certificate</a>
+        </div>
+      </section>
+      <div class="pic">
+        <img src="portimg5.jpg" height="500px" width="500px" alt="Sticky Image" class="sticky-image">
+      </div>
+</body>
+</html>
