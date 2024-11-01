@@ -3,73 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Me - Marknox Portfolio</title>
+    <style>
+        body {
+            background-color: black; /* Background color */
+            color: white; /* Text color */
+            font-family: Arial, sans-serif; /* Font family for consistency */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Add padding */
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center elements horizontally */
+            text-align: center; /* Center text */
+        }
+
+        #about-me {
+            margin: 50px 0; /* Margin for spacing */
+        }
+
+        ul {
+            list-style: none; /* Remove bullets */
+            padding: 0; /* Remove padding */
+        }
+
+        li {
+            padding: 5px 0; /* Spacing for list items */
+        }
+
+        h2, h3 {
+            color: #4CAF50; /* Green color for headers */
+        }
+
+        .profile-pic {
+            width: 150px; /* Size of the profile image */
+            height: 150px; /* Size of the profile image */
+            border-radius: 50%; /* Circular image */
+            object-fit: cover; /* Cover the image */
+            margin-bottom: 20px; /* Space below the image */
+        }
+
+        .all {
+            display: flex; /* Flexbox for skills section */
+            justify-content: space-around; /* Space items evenly */
+            flex-wrap: wrap; /* Allow items to wrap on small screens */
+            max-width: 800px; /* Max width for content */
+            margin: 0 auto; /* Center the content */
+        }
+
+        .personal, .soft, .tools { /* Updated class for tools */
+            flex: 1; /* Allow items to grow */
+            min-width: 200px; /* Minimum width for responsiveness */
+            margin: 10px; /* Space around items */
+            background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+            padding: 15px; /* Padding inside each section */
+            border-radius: 8px; /* Rounded corners */
+        }
+    </style>
 </head>
-<style>
-body{
-    background-color: black;
-    color: white;
-}
-#about-me {
-    text-align: center;
-    margin: 50px 0;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    padding: 5px 0;
-}
-
-h2, h3 {
-    color: #4CAF50;
-}
-.profile-pic {
-    width: 150px; /* Adjust the size of your image */
-    height: 150px;
-    border-radius: 50%; /* Makes the picture circular */
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-.all{
-    justify-content: space-around;
-    display: flex;
-}
-</style>
 <body>
     <section id="about-me">
         <h2>About Me</h2>
         <img src="portimg6.jpg" alt="Your Name" class="profile-pic">
     
         <p>Hello! I'm Sayan, a passionate web developer with experience in frontend technologies like HTML, CSS, JavaScript, and React. I'm currently pursuing a BTech in Computer Science and Engineering and am enthusiastic about learning new things and creating impactful web solutions.</p>
+        
         <div class="all">
-        <div class="personal">
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>HTML, CSS, JavaScript, React</li>
-                <li>C, Python, Java</li>
-                <li>DSA,DAA</li>
-            </ul>
+            <div class="personal">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript, React</li>
+                    <li>C, Python, Java</li>
+                    <li>DSA, DAA</li>
+                </ul>
+            </div>
+            <div class="soft">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Self Motivated</li>
+                    <li>Smart Work</li>
+                </ul>
+            </div>
+            <div class="tools"> <!-- Updated section for tools -->
+                <h3>Tools</h3>
+                <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Git & GitHub</li>
+                    <!-- <li>Figma</li>
+                    <li>Postman</li> -->
+                </ul>
+            </div>
         </div>
-        <div class="soft">
-            <h3>Soft Skills</h3>
-            <ul>
-                 <li>Self Motivated</li>
-                <li>Smart Work</li>
-            </ul>
-        </div>
-        <div class="lang">
-            <h3>Languages</h3>
-            <ul>
-                <li>Bengali</li>
-                <li>English</li>
-                <li>Hindi</li>
-            </ul>
-        </div>
-    </div>
     </section>
 </body>
 </html>
