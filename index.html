@@ -1,81 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style> 
-        *{
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-        body{
-            background-color:black;
+        body {
+            background-color: black;
             color: aliceblue;
             font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        nav{
+        nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 80px;
             background-color: rgb(10, 17, 118);
         }
-        nav ul{
+        nav ul {
             display: flex;
             justify-content: center;
-
         }
-        nav ul li{
+        nav ul li {
             list-style: none;
-            margin:0 23px;
+            margin: 0 23px;
         }
-        nav ul li a{
+        nav ul li a {
             text-decoration: none;
             color: white;
         }
-        nav ul li a:hover{
+        nav ul li a:hover {
             color: rgb(235, 57, 57);
             font-size: 1.04rem;
         }
-        .left{
+        .left {
             font-size: 1.5rem;
         }
-        .first{
+        .first {
             display: flex;
             justify-content: space-around;
-            margin:60px 0 ;
+            margin: 60px 0;
         }
-        .first > div{
+        .first > div {
             width: 40%;
         }
-        .leftsection{
-            /* background-color: rgb(74, 66, 217); */
+        .leftsection {
             font-size: 2rem;
-            margin:30px;
+            margin: 30px;
         }
-        .rightsection img{
-            margin:5px 0;
+        .rightsection img {
+            margin: 5px 0;
         }
-        .pur{
+        .pur {
             color: rgb(75, 128, 227);
         }
-        #element{
+        #element {
             color: aquamarine;
         }
-        .second{
-            color: aqua;
-        }
-        main hr{
-            border: 0;
-            background: white;
-            height: 1.2px;
-            margin:40px 84px;
-        }
-        .btn{
+        .btn {
             padding: 12px;
             border: 2px solid white;
             color: white;
@@ -83,12 +77,30 @@
             border-radius: 20px;
             cursor: pointer;
         }
-        .btn a{
+        .btn a {
             text-decoration: none;
             color: white;
         }
-        .btn:hover{
+        .btn:hover {
             font-size: 20px;
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #0d0d0d;
+        }
+        .social-icons {
+            margin-top: 15px;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: rgb(235, 57, 57);
         }
     </style>
 </head>
@@ -111,31 +123,39 @@
         <section class="first">
             <div class="leftsection">
                 Hi, My name is <span class="pur">Sayan</span>
-                <div>
-                    and I am a Student of Btech(CSE)
-                </div>
+                <div>and I am a Student of Btech(CSE)</div>
                 <span id="element"></span>
                 <div class="button">
-                    <button class="btn" ><a href="cv.html" download>Visit CV</a></button>
-                    <!-- <button class="btn" ><a href="MYCV8.pdf" download>Download CV</a></button> -->
+                    <button class="btn"><a href="cv.html">Visit CV</a></button>
                     <button class="btn"><a href="https://github.com/sayan2k04">Visit Github</a></button>
                 </div>
             </div>
             <div class="rightsection">
-                <img src="portimg5.jpg" alt="" height="300px" width="300px">
+                <img src="portimg5.jpg" alt="Profile Image" height="300px" width="300px">
             </div>
-        </section><hr>
+        </section>
+        <hr>
         <section class="second">
-            
-            
+            <!-- Additional Content Here -->
         </section>
     </main>
+
+    <!-- Social Media Footer -->
+    <footer>
+        <h3>Connect with Me</h3>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/sayan_058/profilecard/?igsh=dW4wc2I0ZWRuenM5" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/sayan.majhi.94617" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/sayan-majhi-04660228a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['<i>Frontend Web Developer</i>','<i>Coding Enthusiast</i>'],
+          strings: ['<i>Frontend Web Developer</i>', '<i>Coding Enthusiast</i>'],
           typeSpeed: 50,
         });
-      </script>
+    </script>
 </body>
 </html>
