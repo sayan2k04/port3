@@ -4,79 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sayan's Portfolio - Projects</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #010101;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Projects Section */
+        #projects {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #020202;
+            color: #fefefe;
+        }
+
+        #projects h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fefefe;
+        }
+
+        #projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #projects li {
+            margin: 20px 0;
+        }
+
+        /* Updated Music Web Clone link style */
+        #projects a {
+            text-decoration: none;
+            font-size: 22px; /* Increased font size */
+            color: #fff;
+            background: linear-gradient(90deg, #0073e6, #00b3ff); /* Gradient background */
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 179, 255, 0.4);
+        }
+
+        #projects a:hover {
+            transform: scale(1.05); /* Slight scaling on hover */
+            box-shadow: 0 6px 12px rgba(0, 179, 255, 0.6); /* Increased shadow on hover */
+            background: linear-gradient(90deg, #00b3ff, #0073e6); /* Reverse gradient on hover */
+            color: #fff;
+        }
+
+        /* Flex Container */
+        .all {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        /* Sticky Image */
+        .sticky-image {
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 10px;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #projects h2 {
+                font-size: 28px;
+            }
+            .all {
+                flex-direction: column;
+                align-items: center;
+            }
+            #projects a {
+                font-size: 18px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
 </head>
-<style>
-    /* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #010101;
-    margin: 0;
-    padding: 0;
-}
-
-/* Projects Section */
-#projects {
-    text-align: center;
-    padding: 50px 0;
-    background-color: #020202;
-}
-
-#projects h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #fefefe;
-}
-
-#projects ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#projects li {
-    margin: 30px 0;
-}
-
-#projects a {
-    text-decoration: none;
-    font-size: 20px;
-    color: #0073e6;
-    border: 2px solid #0073e6;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-#projects a:hover {
-    background-color: #0073e6;
-    color: #fff;
-}
-.all{
-    display: flex;
-    justify-content: center;
-}
-.sticky-image {
-        position: -webkit-sticky; /* For Safari */
-        position: sticky;
-        top: 10px;
-}
-</style>
 <body>
-    <!-- Projects Section -->
+    Projects Section
     <section id="projects">
         <div class="all">
+            <div class="all1">
+                <h2>My Projects</h2>
+                <ul aria-label="List of Projects">
+                    <li><a href="https://sayan2k04.github.io/music-clone-web/" target="_blank" aria-label="Music web clone">Music Web Clone</a></li>
+                    <!-- Future projects can be added here -->
+                </ul>
+            </div>
+            <div class="pic">
+                <img src="portimg5.jpg" height="500px" width="500px" alt="A sample project screenshot" class="sticky-image">
+            </div>
         <div class="all1">
-        <h2>My Projects</h2>
+        <!--<h2>My Projects</h2>
         <ul>
             <li><a href="https://sayan2k04.github.io/music-clone-web/" target="_blank">Music-clone Web</a></li>
             <li><a href="https://sayan2k04.github.io/Travel-form/" target="_blank">Travel Form</a></li>
-            <!-- <li><a href="" target="_blank">Tic-Tac-Toe</a></li> -->
+            <!-- <li><a href="" target="_blank">Tic-Tac-Toe</a></li> 
         </ul>
     </div>
         <div class="pic">
             <img src="portimg5.jpg" height="500px" width="500px" alt="Sticky Image" class="sticky-image">
-        </div>
-    </div>
+        </div>-->
     </section>
 </body>
 </html>

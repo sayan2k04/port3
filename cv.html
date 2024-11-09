@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        /* CV Picture */
+        .cv-container {
+            text-align: center;
+        }
+
+        .cv-image {
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .cv-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Download Button */
+        .btn {
+            padding: 12px;
+            border: 2px solid white;
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn:hover {
+            font-size: 1.1rem;
+            background-color: rgb(235, 57, 57);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CV Section -->
+    <div class="cv-container">
+        <h1>My CV</h1>
+        
+        <!-- CV Picture -->
+        <div class="cv-image">
+            <img src="portimg5.jpg" alt="Sayan's CV Picture">
+        </div>
+
+        <!-- Download Button -->
+        <button class="btn"><a href="MYCV8.pdf" download>Download My CV</a></button>
+    </div>
+
+</body>
+</html>
