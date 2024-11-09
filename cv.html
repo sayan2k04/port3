@@ -20,32 +20,40 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            overflow: auto;
+        }
+
+        /* CV Container */
+        .cv-container {
+            display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+            overflow-y: auto;
         }
 
         /* CV Picture */
-        .cv-container {
-            text-align: center;
-        }
-
         .cv-image {
-            margin: 20px auto;
+            margin: 20px 0;
             border-radius: 10px;
-            overflow: hidden;
-            width: 200px;
-            height: 200px;
+            width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .cv-image img {
             width: 100%;
-            height: 100%;
+            height: auto;
             object-fit: cover;
+            border-radius: 10px;
         }
 
         /* Download Button */
         .btn {
-            padding: 12px;
+            padding: 12px 24px;
             border: 2px solid white;
             color: white;
             background-color: black;
@@ -75,11 +83,11 @@
         
         <!-- CV Picture -->
         <div class="cv-image">
-            <img src="portimg5.jpg" alt="Sayan's CV Picture">
+            <img src="newcv.jpg" alt="Sayan's CV Picture">
         </div>
 
         <!-- Download Button -->
-        <button class="btn"><a href="MYCV8.pdf" download>Download My CV</a></button>
+        <button class="btn"><a href="newcv2.pdf" download>Download My CV</a></button>
     </div>
 
 </body>
